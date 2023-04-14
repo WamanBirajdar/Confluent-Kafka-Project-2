@@ -15,14 +15,14 @@ FILE_PATH="D:/ineron_DataEngineer/Kafka/Confluent-Kafka-Project-2/restaurant_ord
 columns=['Order_Number','Order_Date','Item_Name','Quantity','Product_Price','Total_products']
 
 
-API_KEY = 'INA5FB7VZYKJVALB'
-ENDPOINT_SCHEMA_URL  = 'https://psrc-ko92v.us-east-2.aws.confluent.cloud'
-API_SECRET_KEY = 'et0cKVbTz1nR2lz0KIse8aqnDx9m0iZOgfhpyPbLmgVQBJrgtI89hf5RP7kePcmc'
-BOOTSTRAP_SERVER = 'pkc-lzvrd.us-west4.gcp.confluent.cloud:9092'
+API_KEY = 'YOUR_KEY'
+ENDPOINT_SCHEMA_URL  = 'YOUR_URL'
+API_SECRET_KEY = 'YOUR_KEY'
+BOOTSTRAP_SERVER = 'YOUR_SERVER'
 SECURITY_PROTOCOL = 'SASL_SSL'
 SSL_MACHENISM = 'PLAIN'
-SCHEMA_REGISTRY_API_KEY = '4ZNY6VULLPOP357G'
-SCHEMA_REGISTRY_API_SECRET = 'e0FcYesb4L7hmuNlO2yuQIPBlv5K6X0NRqLD4uezt6JafpIxn0PICTSb9VX+jVu8'
+SCHEMA_REGISTRY_API_KEY = 'YOUR_KEY'
+SCHEMA_REGISTRY_API_SECRET = 'YOUR_KEY'
 
 def sasl_conf():
 
