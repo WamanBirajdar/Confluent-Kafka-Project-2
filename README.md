@@ -19,7 +19,7 @@ pyspark==3.2.1
 
 # download restaurent data from below mentioned link
 
-Download Data Link -> https://github.com/shashank-mishra219/Confluent-Kafka-Setup/blob/main/restaurant_orders.csv
+Download Data Link -> https://github.com/WamanBirajdar/Confluent-Kafka-Project-2/blob/main/restaurant_orders.csv
 
 Complete the given below task to finish this assignment.
 
