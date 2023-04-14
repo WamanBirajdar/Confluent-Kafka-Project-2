@@ -94,45 +94,7 @@ def main(topic):
     schema_registry_conf = schema_config()
     schema_registry_client = SchemaRegistryClient(schema_registry_conf)
     topic='restaurent-take-away-data'
-    schema_str="""
-    {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/myURI.schema.json",
-  "title": "SampleRecord",
-  "description": "Sample schema to help you get started.",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "Order_Number": {
-      "type": "number",
-      "description": "The integer type is used for integral numbers."
-    },
-    "Order_Date": {
-      "type": "string",
-      "description": "The number type is used for any numeric type, either integers or floating point numbers."
-    },
-    "Item_Name": {
-      "type": "string",
-      "description": "The string type is used for strings of text."
-    },
-    "Quantity": {
-      "type": "number",
-      "description": "The number type is used for any numeric type, either integers or floating point numbers."
-    },
-    "Product_Price": {
-      "type": "number",
-      "description": "The number type is used for any numeric type, either integers or floating point numbers."
-    },
-    "Total_products": {
-      "type": "number",
-      "description": "The number type is used for any numeric type, either integers or floating point numbers."
-    }
-  }
-}
-    
-    
-    
-    """
+    schema_str=schema_registry_client.get_latest_version(topic+'-value').schema.schema_str
     print(schema_str)
     print(type(schema_str))
         # subjects = sr.get_subjects()
